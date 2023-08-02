@@ -850,57 +850,9 @@ async def _(event):
         await event.edit(animation_chars[i % 17])
 
 @sython1.on(events.NewMessage(outgoing=True, pattern=r"\.حيوانات"))
-async def _(event):
-    event = await event.edit("حسناً")
-    animation_interval = 0.2
-    animation_ttl = range(96)
-    await event.edit("يتم ..")
-    animation_chars = [
-        "🐶.",
-        "🐱🐭",
-        "🐹🐰🦊",
-        "🐻🐼🐻‍❄️🐨",
-        "🐯🦁🐮🐷🐽",
-        "🐸🐵🙈🙉🙊🐒",
-        "🐔🐧🐦🐤🐣🐥🪿",
-        "🦆🐦‍⬛️🦅🦉🦇🐺🐗🐴",
-        "🦄🫎🐝🪱🐛🦋🐌",
-        "🐌🐞🐜🪰🪲🪳",
-        "🦟🦗🕷🕸🐏",
-        "🦂🐢🐍🦎",
-        "🦖🦕🐙",
-        "🦑🪼",
-        "🦧."
-    ]
-    for i in animation_ttl:
-        await asyncio.sleep(animation_interval)
-        await event.edit(animation_chars[i % 17])
-        
-        @sython1.on(events.NewMessage(outgoing=True, pattern=r"\.رمز"))
-async def _(event):
-    event = await event.edit("حسناً")
-    animation_interval = 0.2
-    animation_ttl = range(96)
-    await event.edit("يتم ..")
-    animation_chars = [ " ༨ , ↺ , 𖥔. , ⌑ , ꞋꞌꞋ , ༣ , ⑅ , ✼ , 𝆹𝅥 , ャ , ﹆ׂׂ , ｀、ヽ｀ヽ｀、ヽ  ｀、ヽ , ❒ , ❑ , ❐ , ❏ , ✧ , 𓍯 , ␥ , ҉ , ⬚ , ⎚ , ⌕ , ╭ ─ ─ ─ ─ ─ ─  ╰ ➛ , ⇄ ⇅ ⇆ ⇇ ⇈ ⇉ ⇊ ⇋ ⇌ , ➫ ➬ ➩ ➪ ➭ ➮ ➯ ➱ , ➔ ➙ ➘ ➚ ➛ ➜ ➞ , ↫ ↬↜ ↝↶ ↷ , ✎ , ✐ , ᨎᨎᨎᨎᨎᨎᨎᨎᨎᨎ , ﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌ , ╭╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╯ , ╭┉֢┅ׄ┉֢┅ׄ┉֢┅ׄ┉֢┅ׄ┉֢┅ׄ┉֢┅ׄ┉֢┅ׄ┉֢┅ׄ┉֢┅ׄ┉֢╯ , 「」 , ﹛﹜ , ﹄﹃ , 【】 , 〚 〛 , 〘 〙 , 〖〗 , ⊱────────── ]
-for i in animation_ttl:
-        await asyncio.sleep(animation_interval)
-        await event.edit(animation_chars[i % 17])
-
-@sython1.on(events.NewMessage(outgoing=True, pattern=r"\.بايو"))
-async def _(event):
-    event = await event.edit("حسناً")
-    animation_interval = 0.2
-    animation_ttl = range(96)
-    await event.edit("يتم ..")
-    animation_chars = [هَو مخِتلف ، و ﭑنا ﭑحبٰ ﭑخِتلافهَ 🫶🏻🥹♥.", "عليًِ هوَ طريقُ الحقِ، فَ من أراد الحقَ فلَ يتبعَه🫂🤎.", "في بعض الاحيان يجب عليك ان تخسرهم حتى تجد نفسك","كم بكينا لاننا لم نبلغ شمساً ولاقمراً ، ثم وضع الله مجرةً باكملها بين ايدينا","الإنسان المتاح للجميع مُقرف.","مالاترضاه لنفسك لاتؤذي به غيرك","ضَجيج العائله هو هدوء القلب","الليل شبعني سفر وآنه بمكاني","انتِ البحر وانا المُبحر بكِ و الغريق.","النوم فرصة للانسان كَي يرتاح من نفسه","تَخيل ان تؤذي شخصاً كان هدفه الوحيد ان يجعلك سعيدا","لا اُفيدَ ولا اعتذِر ولا اُبادر ولا انتظِر .","فَإِنِّي إِذا ضَاقَتْ عَلَيَّ مشَاعِرِي ، ‏كَتَمْتُ ٱلهَوَى لكَنَّ دَمْعِيٌّ تَكَلَّمَا","لن يدومَ الهمُّ يا حلوَ المُحيّا ، ‏لن يظلّ الحزنُ في عينيكَ يحيا","ولو أني أحمد الله دهراً ، ‏ما وفيته جزءاً من النعم","هذهِ العيون الساحراتُ أريدُها فأنا العليلُ وكُحْلها تِرياقي","فلا يغريني مدح ولا يسقطني انتقاد جميعهم اراء وانا القرار","اقاتلُ كلّ جبارِ عنيدِ و يقتلني الفراقُ بلا قتْال","وكيفَ أمحوكَ من أوراقِ ذاكرَتي و أنتَ في القلبِ مثلَ النقشِ في الحجرِ.","اقاتلً لمن اهوُاه ومن اهَواه يقتًلنيٍ","فَيَ اُلهًادئيٓنَ اشياء لاَ تهٍداَ","يكادً حسنًك أنً يغًوي ملائكةًً فمًا بالك بابن الطيًن والماءٍ","‌‏أَنَّ الزَمانَ الَّذي مازالَ يُضحِكُنا ، ‏أُنساً بِقُربِهِمُ قَد عادَ يُبكينا","ومِن جَاهلٍ بي وهوَ يَجهَلُ جَهلَهُ ويَجهَلُ عِلمي أنَّهُ بي جاهِلُ"]
-
-for i in animation_ttl:
-        await asyncio.sleep(animation_interval)
-        await event.edit(animation_chars[i % 17])
 
         
-@sython1.on(events.NewMessage(outgoing=True, pattern=r"\.قلوب"))
+@sython1.on(events.NewMessage(outgoing=Tru, pattern=r"\.قلوب"))
 async def _(event):
     event = await event.edit("حسناً")
     animation_interval = 0.2
